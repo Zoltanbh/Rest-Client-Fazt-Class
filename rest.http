@@ -1,0 +1,49 @@
+@api = https://jsonplaceholder.typicode.com
+
+### GET Obtendo todas as publicações do doc abaixo
+
+GET {{api}}/posts
+
+### GET Obtendo uma só publicação /1
+
+#______________________________________________
+
+
+GET {{api}}/posts/1
+
+
+#______________________________________________
+
+
+### POST criando uma nova publicação
+
+POST {{api}}/posts
+Content-Type: application/json
+
+{ 
+  "title" : "Aprendendo Rest Client",
+  "body" : "Estamos aprendendo mesmo"
+}
+
+#____________________________________________
+
+### PUT atualizando  publicação por id
+
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+  "title":"Esta é a publicação n 1",
+  "body": "Este conteúdo foi atualizado"
+}
+
+#____________________________________________
+
+
+### DELETE liminando uma publicação
+
+DELETE https://jsonplaceholder.typicode.com/posts/1
+
+
+
+
